@@ -1,0 +1,602 @@
+*{
+  margin: 0;
+}
+
+body{
+  padding-top: 90px;
+  background: gray;
+}
+
+.navbar{
+  box-shadow: 0 4px 5px #e5e5e5;
+  background-color:rgb(217, 214, 211);
+  
+}
+
+.logo{
+  height: 50px;
+  border-radius: 50px;
+}
+
+.titulo-pagina{
+  margin: 10px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 40px;
+  padding-left: 100px;
+  
+}
+#contenedor-descripcion{
+  display: flex;
+  padding: 10px;
+  
+}
+ 
+
+.descripcion{
+  padding-left: 50px;
+  width: 500px;
+  margin: 10px;
+
+}
+
+.contenedor-tarjeta{
+  
+  width: 500px;
+  text-align: center;
+  padding-top: 75px;
+  
+  
+  
+}
+
+.tarjeta{
+  width: 400px;
+  
+  
+}
+
+.informativo{
+  text-align: center;
+}
+
+@media (max-width: 600px){
+  #contenedor-descripcion{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px){
+  #contenedor-descripcion {
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .bienvenidos{
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor-tarjeta {
+    text-align: center;
+    margin: auto;
+    align-self: center;
+    
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .bienvenidos{
+    text-align: center;
+    padding-right: 140px;
+
+
+  }
+}
+
+/*pagina servicios*/
+
+.titulo-servicios{
+  
+  height: 100px;
+  grid-column: 1/3;
+  text-align: center;
+  padding-right: 100px;
+
+}
+
+
+.lista-servicios{
+  padding-left: 120px;
+  
+  height: 350px;
+
+}
+
+.lista-servicios3 {
+  padding-left: 120px;
+  height: 350px;
+
+}
+
+
+.imagenes-servicios{
+  
+  height: 350px;
+  text-align: center;
+  padding-right: 80px;
+  
+  
+}
+
+
+.imagen-servicios{
+  width: 280px;
+  padding-top: 90px;
+  
+  
+}
+
+
+.contenedor-servicios{
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+}
+
+@media all and (max-width: 1023px) {
+  .lista-servicios{
+    grid-column: 1 / span 3;
+    text-align: center;
+    list-style-type: none;
+    padding-right: 60px;}    
+}
+
+@media all and (max-width: 1023px) {
+  .imagenes-servicios {
+    grid-column: 1 / span 3;
+    height: 210px;
+  }
+}
+
+
+@media all and (max-width: 1023px) {
+  .imagen-servicios {
+    padding-top: 10px;
+    margin-left: 120px;
+  
+    }
+}
+
+
+@media all and (max-width: 1023px) {
+  .lista-servicios3 {
+    grid-column: 1 / span 3;
+    text-align: center;
+    list-style-type: none;
+    height: 190px;
+    padding-right: 60px;
+
+  }
+}
+
+/*pagina sobre mi */
+
+.contenedor-sobre-mi{
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,auto);
+}
+
+.contenedor-sobre-mi > div,
+.contenedor-sobre-mi .titulo-sobre-mi
+.contenedor-sobre-mi .estudios
+.contenedor-sobre-mi .contenido-sobre-mi
+.contenedor-sobre-mi .sidebar-sobre-mi
+.contenedor-sobre-mi .informativo
+
+{
+  
+  padding: 20px;
+  border-radius: 4px;
+}
+  
+
+.contenedor-sobre-mi .titulo-sobre-mi{
+  
+  color: black;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.contenedor-sobre-mi .estudios {
+  
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.contenedor-sobre-mi .contenido-sobre-mi{
+  grid-column: span 2;
+}
+
+.contenedor-sobre-mi .sidebar-sobre-mi{
+  grid-column: 3/4;
+  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  grid-row: span -2;
+}
+
+.contenedor-sobre-mi .widget-1-sobre-mi{
+  
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+
+}
+
+
+.contenedor-sobre-mi .widget-2-sobre-mi {
+  background: blueviolet;
+  color: white;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  grid-column: 2/4 ;
+
+}
+
+
+
+.interdi{
+  height: 200px;
+}
+
+.contenedor-sobre-mi .informativo{
+  
+  color: black;
+  grid-column: span 3;
+}
+/*
+@media screen and (min-width: 577px) and (max-widht: 1023px) {
+  .contenedor-sobre-mi .contenido-sobre-mi {
+    grid-row: span 3;
+  }
+
+  .contenedor-sobre-mi .sidebar-sobre-mi {
+    grid-column: 4 / -2;
+    padding-right: 100px;
+  }
+
+} */
+
+@media screen and ( max-width: 576px ){
+  .contenedor-sobre-mi .contenido-sobre-mi{
+    grid-column: 1 / -1;
+  }
+  .contenedor-sobre-mi .sidebar-sobre-mi{
+    grid-column: 1 / -1;
+    padding-right: 100px;
+  }
+  
+  .contenedor-sobre-mi .widget-1-sobre-mi,
+  .contenedor-sobre-mi .widget-2-sobre-mi
+  {
+      grid-column: span 3;
+  }
+
+}
+
+
+
+
+  /*pagina tarifas */
+
+.contenedor-tarifas {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:  "titulo-Tarifas titulo-Tarifas titulo-Tarifas titulo-Tarifas"
+                        "widget-1 contenido1 contenido1 widget-2"     
+                        "widget-3 contenido2 contenido2 widget-4"  
+                        "footer footer footer footer"; 
+}
+
+.contenedor-tarifas > div,
+.contenedor-tarifas .titulo-Tarifas
+.contenedor-tarifas .contenido1 
+.contenedor-tarifas .contenido2
+.contenedor-tarifas .footer 
+{
+  
+  padding: 5px;
+  border-radius: 4px;
+}
+
+
+
+
+.contenedor-tarifas .titulo-Tarifas {
+  
+  color: black;
+  text-align: center;
+  grid-area: titulo-Tarifas;  
+}
+
+.contenedor-tarifas .contenido1 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: contenido1;
+}
+
+.contenedor-tarifas .contenido2 {
+  text-align: center;
+
+  grid-area: contenido2;
+}
+
+.imagen-tarifas{
+  width: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.contenedor-tarifas .widget-1{
+  
+  color: white;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  grid-area: widget-1;
+
+}
+
+.contenedor-tarifas .widget-2{
+  
+  color: white;
+  width:  250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  grid-area: widget-2; 
+}
+
+.contenedor-tarifas .widget-3 {
+  
+  color: white;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  grid-area: widget-3; 
+}
+
+.contenedor-tarifas .widget-4 {
+  
+  color: white;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  grid-area: widget-4; 
+}
+
+.contenedor-tarifas .informativo-tarifas {
+  
+  color: black;
+  
+  grid-area: footer;
+  
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1023px){
+  .contenedor-tarifas {
+    grid-template-areas: "titulo-Tarifas titulo-Tarifas titulo-Tarifas titulo-Tarifas"
+                          "contenido1 contenido1 contenido1 contenido1"
+                          "widget-1 widget-1 widget-1 widget-2"
+                          "contenido2 contenido2 contenido2 contenido2"
+                          "widget-3 widget-3 widget-3 widget-4"
+                          "footer footer footer footer"
+ }
+  .contenedor-tarifas .widget-1,
+  .contenedor-tarifas .widget-3{
+    width: 80%;
+  }
+  .contenedor-tarifas .widget-2,
+  .contenedor-tarifas .widget-4 {
+    padding-right: 200px;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor-tarifas {
+    grid-template-areas: "titulo-Tarifas titulo-Tarifas titulo-Tarifas titulo-Tarifas"
+                          "contenido1 contenido1 contenido1 contenido1"
+                          "widget-1 widget-1 widget-1 widget-1"
+                          "widget-2 widget-2 widget-2 widget-2"
+                          "contenido2 contenido2 contenido2 contenido2"
+                          "widget-3 widget-3 widget-3 widget-3"
+                          "widget-4 widget-4 widget-4 widget-4"
+                          "footer footer footer footer"
+  }
+  .contenedor-tarifas{
+    
+    text-align: center;
+  }
+  .contenedor-tarifas .widget-1,
+  .contenedor-tarifas .widget-2,
+  .contenedor-tarifas .widget-3,
+  .contenedor-tarifas .widget-4 {
+    width: 90%;
+  }
+
+}
+
+    /*pagina contacto y ubicacion */
+
+.contenedor-contacto-ubicacion {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "titulo-contacto titulo-contacto"
+                        "contenido-contacto contenido-contacto"
+                        "titulo-ubicacion titulo-ubicacion"
+                        "mapa contenido-ubicacion"
+                        "informativo-contacto informativo-contacto";
+}
+
+.contenedor-contacto-ubicacion > div,
+.contenedor-contacto-ubicacion .titulo-contacto
+.contenedor-contacto-ubicacion .contenido-contacto
+.contenedor-contacto-ubicacion .titulo-ubicacion
+.contenedor-contacto-ubicacion .contenido-ubicacion
+ {
+  
+  padding: 20px;
+  border-radius: 4px;
+}
+
+
+.contenedor-contacto-ubicacion .titulo-contacto {
+  
+  text-align: center;
+  color: black;
+  grid-area: titulo-contacto;
+
+}
+
+.contenedor-contacto-ubicacion .contenido-contacto {
+  text-align: center;
+  grid-area: contenido-contacto;
+}
+
+.contenedor-contacto-ubicacion .titulo-ubicacion {
+  
+  text-align: center;
+  color: black;
+  grid-area: titulo-ubicacion;
+
+}
+
+
+
+.contenedor-contacto-ubicacion .contenido-ubicacion {
+  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  grid-area: contenido-ubicacion;
+}
+
+
+.contenedor-contacto-ubicacion .mapa {
+  
+  color: white;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: mapa;
+
+}
+
+
+
+.contenedor-contacto-ubicacion .informativo-contacto {
+  
+  color: black;
+  grid-area: informativo-contacto;
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px){
+  .contenedor-contacto-ubicacion {
+    grid-template-areas: "titulo-contacto titulo-contacto"
+      "contenido-contacto contenido-contacto"
+      "titulo-ubicacion titulo-ubicacion"
+      "contenido-ubicacion contenido-ubicacion"
+      "mapa mapa"
+      "informativo-contacto informativo-contacto";
+
+
+  }
+
+  .contenido-contacto {
+    text-align: center;
+    
+  }
+
+  .contenido-ubicacion {
+    padding-left: 170px;
+
+  }
+} 
+
+@media screen and (max-width: 600px) {
+  .contenedor-contacto-ubicacion {
+    grid-template-areas: "titulo-contacto titulo-contacto"
+                          "contenido-contacto contenido-contacto"
+                          "titulo-ubicacion titulo-ubicacion"
+                          "contenido-ubicacion contenido-ubicacion"
+                          "mapa mapa"
+                          "informativo-contacto informativo-contacto";
+    
+  
+
+  }
+  .contenido-contacto{
+    padding-left: 50px;
+  }
+  .contenido-ubicacion{
+    width: 90%;
+  }
+}
